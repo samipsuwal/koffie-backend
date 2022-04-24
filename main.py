@@ -64,8 +64,7 @@ async def lookup(vin: str):
     try:
         #TODO make sure the VIN is valid 17 alpha numeric
         if services.validate_vin(vin) is False:
-            raise HTTPException(status_code=404, detail="Not Found")
-            #return "Invalid VIN {}".format(vin)
+            return "Invalid VIN {}".format(vin)
 
 
         #get the vehicle from the database, service layer -> database layer
