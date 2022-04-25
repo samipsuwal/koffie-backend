@@ -1,0 +1,9 @@
+Dependencies:
+
+fastapi
+uvicorn
+httpx
+databases
+databases[sqlite]
+pydantic
+pyspark - Had issues in Windows.
