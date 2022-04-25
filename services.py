@@ -60,11 +60,16 @@ def validate_vin(vin):
     
 
 
-from pyspark.sql import SparkSession, Row
-spark = SparkSession.builder.getOrCreate()
-from pyspark.sql.types import StructType, StructField, StringType
+#from pyspark.sql import SparkSession, Row
+#spark = SparkSession.builder.getOrCreate()
+#from pyspark.sql.types import StructType, StructField, StringType
 
 def convert_json_to_par(json_data):
-    return "Success"
+    #create data frame for the json_data
+
+
+    #convert data frame to paraquet 
+    #save file/return
+    return "Not Yet Implemented"
 
 
