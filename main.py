@@ -57,10 +57,8 @@ async def lookup(vin: str):
     cached_vehicle = await get_cached_vehicle_by_VIN(vin)
 
     if cached_vehicle is not None:
-        #parsed_vehicle = services.parse_vehicle(cached_vehicle)
-        vehicle_to_return = cached_vehicle
-        #vehicle_to_return["CachedResult"] = True
-        return vehicle_to_return
+        #Work around #1:cannot add cached_result attribute to what is returned by the database
+        return {"vin": cached_vehicle.VIN, "Make": cached_vehicle.Make, "Model":cached_vehicle.Model, "ModelYear": cached_vehicle.ModelYear, "BodyClass":cached_vehicle.BodyClass, "CachedResult":True}
     
     #vic wasn't found in the database or forced key was used
     requested_vehicle_from_client = await services.get_vehicle_from_client(vin)
