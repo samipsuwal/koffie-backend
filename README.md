@@ -1,5 +1,4 @@
 # vehicle-api-backend
-backend-assessment for [Koffie Labs](https://getkoffie.com/) 
 
 APIS build on [FastAPI](https://fastapi.tiangolo.com/). Returns Vehicle information according to VIN. Backed by [vPIC API](https://vpic.nhtsa.dot.gov/api/), and uses [SQLite](https://www.sqlite.org/index.html) for cache.
 
