@@ -58,23 +58,5 @@ Returns:
       cached_delete: Boolean
     }
   
- ---
  
- ### 3- Export
-URL: `/export`
-
-Example: `/export`
-
-Method: `GET`
-
-Params: 
-
-    N/A
-
-Returns: 
-
-  Type: Paraquet file
-  
-  
- ---
  
